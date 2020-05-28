@@ -9,7 +9,7 @@ class TextControl extends StatelessWidget {
   Widget build(BuildContext context) {
     return FlatButton(
       onPressed: ()=>handler(questionText),
-      child: Text('New Test'),
+      child: Text('New Text'),
       textColor: Colors.blue,
     );
   }
