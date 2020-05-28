@@ -4,8 +4,8 @@
 // 3) Split the app into three widgets: App, TextControl & Text
 import 'package:flutter/material.dart';
 
-import './text.dart';
-import './textControl.dart';
+import './text_output.dart';
+import './text_control.dart';
 
 void main() => runApp(MyApp());
 
@@ -30,11 +30,11 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: Text('Flutter Assignment 1'),
         ),
-        body: Container(
+        body: Container( //Could have used Center(
           width: double.infinity,
           child: Column(
             children: [
-              PrintText(_textString),
+              TextOuput(_textString),
               TextControl(_changeText,"What are you looking at?"),
             ],
             mainAxisSize: MainAxisSize.max,
